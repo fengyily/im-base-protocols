@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+// protoc: v.17.3
+option go_package = "../../protoc;protoc";
+
+// protoc: v3.6.1 
+// package protoc;
+
+message Register {
+    string ClientId = 1;
+    string RoomNo = 2;
+    string UserName = 3;
+    string HeadImgUrl = 4;
+    repeated string OtherInfos = 5;
+}
+
+message Registers {
+    repeated Register register = 1;
+}
